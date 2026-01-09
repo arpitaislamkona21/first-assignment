@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+width: 1480px;
+margin: 0 auto;
+
+}
+
 
 .font-inter{
   font-family: "Inter", sans-serif;
@@ -15,7 +22,8 @@ header{
     
 }
 nav{
-    max-width: 1600px;
+ width: 1360px;
+ margin: 0 auto;
     height: 92px;
     padding: 16px 120px;
 }
@@ -65,4 +73,386 @@ nav{
     font-size: 16px;
     color: #ffffff;
     border: 0;
+}
+
+/* Banner Style Start */
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+           width: 1360px;
+           background-image:url(img/hero-bg.png) ;
+            padding: 50px 20px;
+             background-size: cover;
+             margin: 0 auto;
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            color: green;
+            font-size: 13px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            font-weight: 500;
+        }
+
+        .badge i {
+            color: #5eead4;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 58px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+
+        .highlight {
+            color: #5eead4;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 650px;
+            margin: 0 auto 35px;
+            line-height: 1.65;
+            font-weight: 400;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #5eead4;
+            color: #1a2332;
+            box-shadow: 0 4px 14px rgba(94, 234, 212, 0.25);
+        }
+
+
+        .btn-primary i {
+            font-size: 13px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .btn-secondary i {
+            font-size: 16px;
+        }
+
+            /* Banner Style End */
+
+#card-layout
+{
+    margin: 0 auto;
+    width: 1160px;
+    background-color: #5eead4;
+    overflow: hidden;
+}
+#card-layout .card-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+height: 152px;  
+text-align: center;
+gap: 7px;
+
+
+}
+#card-layout .card-section h2{
+    font-size: 48px;
+    font-weight: 700;
+     color: #001931;
+     
+}
+#card-layout .card-section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #627382;
+    line-height: 20px;
+    
+}
+.card-info{
+    display: flex;
+    gap: 24px;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.card-info .card{
+    background-color: #ffffff;
+
+    width: 300px;
+    height: 300px;
+    gap: 16px;
+    text-align: center;
+    box-shadow: 0 4px 10px #dadcdf;
+}
+.card-info .card img{
+    background-color: #f95555;
+    border-radius: 8px;
+}
+.card-info .card h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.card-info .card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height:20px;
+    color:#627382;
+}
+#card-layout{
+    width: 1600px;
+    height: 448px;
+}
+
+#solution .solution-one{
+    display:flex;
+    justify-content: space-between;
+    gap: 60px;
+   
+}
+.solution-heading1{
+    color: black;
+}
+.solution-heading2{
+    color: black;
+}
+.solution-text-ul ul li{
+ list-style-type: none;
+}
+.solution-text-ul ul li i{
+    color: green;
+}
+.solution-one .solution-img{
+    width:600px ;
+    height: 600px;
+}
+.solution-text .solution-text-hp .solution-heading1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #30B868;
+}
+.solution-text .solution-text-hp .solution-heading2{
+   font-size: 48px;
+   font-weight: 700;
+   color: #001931; 
+}
+.solution-text .solution-text-hp p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #627382;
+}
+.solution-text-ul ul li span{
+    font-size: 16px;
+    font-weight:500 ;
+    line-height: 20px;
+    color: #001931;
+}
+
+
+
+
+
+
+
+
+
+.chellange-ass {
+      display: flex;
+    gap: 24px;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+ width: 1360px;
+  height: 400px;
+  margin: 0 auto;
+  
+}
+
+
+
+.chellange-ass .chellange-one h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #001931;
+    text-align: center;
+}
+ .chellange-ass .chellange-one p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #627382;
+       text-align: center;
+}
+
+
+.chellange-ass .chellange2 p{
+  font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #627382;   
+       text-align: center;
+
+}
+.chellange-ass .chellange2 button{
+   padding: 16px 12px; 
+   width: 194px;
+   height: 52px;
+   background-color: #30B868;
+   color: #ffffff;
+   border-radius: 8px;
+   font-size: 16px;
+   border: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* Card section */
+        .learning-container {
+            max-width: 1360px;
+            margin: auto;
+            padding: 30px 0px;
+        }
+
+       
+        .learning-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .learning-hero h1 {
+            font-size: 36px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .learning-hero p {
+            font-size: 18px;
+            color: gray;
+        }
+
+        /* Cards section */
+        .learning-cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .learning-card {
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 25px;
+           text-align: center;
+           box-shadow: #b3b3c6 1px 1px;
+        }
+
+        .learning-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .learning-card h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .learning-card p {
+            color: #627382;
+            line-height: 1.5;
+        }
+        .learning-icon img{
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #f95555;
+        }
+        /* Card section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 1600px;
+    height: 347px;
+    background-color: #273a49;
+    padding: 120px 120px 120px 30px;
+    gap: 80px;
+
+}
+.footer-conteiner{
+    display: flex;
+    justify-content: space-between;
+    width: 1360px;
+    height: 64px;
+}
+.footer-conteiner span{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.footer-bottom{
+    width: 1360px;
+    height: 53px;
+
 }
