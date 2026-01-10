@@ -1,458 +1,298 @@
-*{
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
-width: 1480px;
-margin: 0 auto;
 
+body {
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+    line-height: 1.6;
 }
 
+/* Header & Nav */
+header {
+    background: #fff;
+    border-bottom: 1px solid #f1f5f9;
+}
 
-.font-inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:600px;
-  font-style: normal;
-}
-header{
-    background-color:#ffffff;
-    
-}
-nav{
- width: 1360px;
- margin: 0 auto;
-    height: 92px;
-    padding: 16px 120px;
-}
-.nav-left img{
-    width: 139px;
-    height: 60px;
-}
-.nav-middle .list{
-    
-    display: flex;
-    gap: 32px;
-    flex-direction: row;
-    
-   
-}
-.nav-middle .list li{
-    list-style: none;
-    font-size:16px;
-    font-weight: 500px;
-     
-  
-}
-#navbar{
+nav {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-.nav-middle .list li a{
-    text-decoration: none;
-   
-    width: 365px;
-    height: 24px;
-    color:#000000;
-    padding: 0;
-;
-}
-.nav-right button{
-    width:164px;
-    height:44px;
-    padding:12px 16px ;
-    background-color:#30B868 ;
-    padding:12px 16px;
-    gap: 10px;
-    border-radius:4px;
-    font-weight:600;
-    font-size: 16px;
-    color: #ffffff;
-    border: 0;
+    padding: 0 20px;
 }
 
-/* Banner Style Start */
-
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-           width: 1360px;
-           background-image:url(img/hero-bg.png) ;
-            padding: 50px 20px;
-             background-size: cover;
-             margin: 0 auto;
-        }
-
-        .container {
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            color: green;
-            font-size: 13px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            font-weight: 500;
-        }
-
-        .badge i {
-            color: #5eead4;
-            font-size: 12px;
-        }
-
-        h1 {
-            font-size: 58px;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 10px;
-            line-height: 1.15;
-            letter-spacing: -0.5px;
-        }
-
-        .highlight {
-            color: #5eead4;
-        }
-
-        .subtitle {
-            font-size: 17px;
-            color: rgba(255, 255, 255, 0.75);
-            max-width: 650px;
-            margin: 0 auto 35px;
-            line-height: 1.65;
-            font-weight: 400;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 35px;
-        }
-
-        .btn {
-            padding: 14px 28px;
-            border-radius: 6px;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background: #5eead4;
-            color: #1a2332;
-            box-shadow: 0 4px 14px rgba(94, 234, 212, 0.25);
-        }
-
-
-        .btn-primary i {
-            font-size: 13px;
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.25);
-        }
-
-        .btn-secondary i {
-            font-size: 16px;
-        }
-
-            /* Banner Style End */
-
-#card-layout
-{
-    margin: 0 auto;
-    width: 1160px;
-    background-color: #5eead4;
-    overflow: hidden;
-}
-#card-layout .card-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-height: 152px;  
-text-align: center;
-gap: 7px;
-
-
-}
-#card-layout .card-section h2{
-    font-size: 48px;
-    font-weight: 700;
-     color: #001931;
-     
-}
-#card-layout .card-section p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #627382;
-    line-height: 20px;
-    
-}
-.card-info{
+.nav-middle .list {
     display: flex;
-    gap: 24px;
-  justify-content:space-between;
-  align-items: center;
-
-}
-.card-info .card{
-    background-color: #ffffff;
-
-    width: 300px;
-    height: 300px;
-    gap: 16px;
-    text-align: center;
-    box-shadow: 0 4px 10px #dadcdf;
-}
-.card-info .card img{
-    background-color: #f95555;
-    border-radius: 8px;
-}
-.card-info .card h2{
-    font-size: 24px;
-    font-weight: 600;
-}
-.card-info .card p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height:20px;
-    color:#627382;
-}
-#card-layout{
-    width: 1600px;
-    height: 448px;
+    gap: 30px;
+    list-style: none;
 }
 
-#solution .solution-one{
-    display:flex;
-    justify-content: space-between;
-    gap: 60px;
-   
-}
-.solution-heading1{
-    color: black;
-}
-.solution-heading2{
-    color: black;
-}
-.solution-text-ul ul li{
- list-style-type: none;
-}
-.solution-text-ul ul li i{
-    color: green;
-}
-.solution-one .solution-img{
-    width:600px ;
-    height: 600px;
-}
-.solution-text .solution-text-hp .solution-heading1{
-    font-size: 16px;
+.nav-middle .list a {
+    text-decoration: none;
+    color: #475569;
     font-weight: 500;
-    line-height: 20px;
+    font-size: 15px;
+}
+
+.btn-primary-small {
+    background-color: #30B868;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1320px;
+    margin: 0 auto;
+    background:  url('img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.badge {
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #22cf61;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.highlight {
     color: #30B868;
 }
-.solution-text .solution-text-hp .solution-heading2{
-   font-size: 48px;
-   font-weight: 700;
-   color: #001931; 
-}
-.solution-text .solution-text-hp p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #627382;
-}
-.solution-text-ul ul li span{
-    font-size: 16px;
-    font-weight:500 ;
-    line-height: 20px;
-    color: #001931;
+
+.subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #cbd5e1;
+    font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-.chellange-ass {
-      display: flex;
-    gap: 24px;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
- width: 1360px;
-  height: 400px;
-  margin: 0 auto;
-  
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
+.btn {
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    border: none;
+}
 
+.btn-green {
+    background-color: #30B868;
+    color: white;
+}
 
-.chellange-ass .chellange-one h1{
-    font-size: 40px;
-    font-weight: 700;
-    color: #001931;
+.btn-outline {
+    border: 2px solid rgba(255,255,255,0.3);
+    color: white;
+}
+
+/* Learning Cards */
+.learning-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
     text-align: center;
 }
- .chellange-ass .chellange-one p{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+
+.learning-hero h2 {
+    font-size: 42px;
+    color: #001931;
+    margin-bottom: 15px;
+}
+
+.learning-hero p {
     color: #627382;
-       text-align: center;
+    margin-bottom: 60px;
 }
 
-
-.chellange-ass .chellange2 p{
-  font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #627382;   
-       text-align: center;
-
-}
-.chellange-ass .chellange2 button{
-   padding: 16px 12px; 
-   width: 194px;
-   height: 52px;
-   background-color: #30B868;
-   color: #ffffff;
-   border-radius: 8px;
-   font-size: 16px;
-   border: 0px;
+.learning-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-/* Card section */
-        .learning-container {
-            max-width: 1360px;
-            margin: auto;
-            padding: 30px 0px;
-        }
-
-       
-        .learning-hero {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .learning-hero h1 {
-            font-size: 36px;
-            color: black;
-            margin-bottom: 15px;
-        }
-
-        .learning-hero p {
-            font-size: 18px;
-            color: gray;
-        }
-
-        /* Cards section */
-        .learning-cards {
-            display: flex;
-            gap: 20px;
-        }
-
-        .learning-card {
-            border-radius: 10px;
-            background-color: #ffffff;
-            padding: 25px;
-           text-align: center;
-           box-shadow: #b3b3c6 1px 1px;
-        }
-
-        .learning-icon {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .learning-card h3 {
-            margin: 10px 0;
-            font-size: 22px;
-        }
-
-        .learning-card p {
-            color: #627382;
-            line-height: 1.5;
-        }
-        .learning-icon img{
-            padding: 5px;
-            border-radius: 50%;
-            background-color: #f95555;
-        }
-        /* Card section End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-    width: 1600px;
-    height: 347px;
-    background-color: #273a49;
-    padding: 120px 120px 120px 30px;
-    gap: 80px;
-
+.card {
+    flex: 1;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: left;
+    background: #fff;
 }
-.footer-conteiner{
+
+.icon-box img {
+    width: 45px;
+    height: 45px;
+    background: #ed5050;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #627382;
+    font-size: 14px;
+}
+
+/* Solution Section */
+.solution-section {
+    background: #fff;
+    padding: 100px 0;
+}
+
+.solution-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.solution-img img {
+    height: 500px;
+    width: 500px;
+}
+
+.solution-content .label {
+    color: #30B868;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.solution-content h2 {
+    font-size: 44px;
+    margin: 15px 0 25px;
+    line-height: 1.2;
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.check-list i {
+    color: #30B868;
+}
+
+/* CTA Banner */
+.cta-banner {
+    padding: 80px 20px;
+}
+
+.cta-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8fafc;
+    padding: 80px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cta-card h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta-card p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #627382;
+}
+
+.small-text {
+    margin-top: 20px !important;
+    font-size: 13px !important;
+}
+
+/* Footer */
+.footer {
+    max-width: 1320px;
+    margin: 0 auto;
+    background-color: #001931;
+    color: white;
+    padding: 80px 0 40px;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 1360px;
-    height: 64px;
+    padding: 0 20px 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.footer-conteiner span{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-}
-.footer-bottom{
-    width: 1360px;
-    height: 53px;
 
+.social-section span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a i{
+     color: white;
+    font-size: 20px;
+
+}
+   
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    color: #94a3b8;
+    font-size: 14px;
 }
